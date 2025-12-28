@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emergency Plumber in Pasadena, TX | Triple J Plumbing Services LLC</title>
+    <meta name="description" content="Need a reliable plumber in Pasadena, TX? Triple J Plumbing Services LLC offers 24/7 emergency plumbing, repairs, and installations. Call now at (713) 893-7051." />
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3, h4, .heading-font {
+            font-family: 'Oswald', sans-serif;
+            text-transform: uppercase;
+        }
+        .bg-plumbing-blue { background-color: #003366; }
+        .text-plumbing-blue { color: #003366; }
+        .bg-plumbing-red { background-color: #CC0000; }
+        .text-plumbing-red { color: #CC0000; }
+        
+        .header-scrolled {
+            background-color: white !important;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            padding-top: 0.5rem !important;
+            padding-bottom: 0.5rem !important;
+        }
+        .header-scrolled .nav-link { color: #374151 !important; }
+        .header-scrolled .nav-link:hover { color: #003366 !important; }
+        .header-scrolled .logo-text { color: #003366 !important; }
+        .header-scrolled .logo-subtext { color: #6b7280 !important; }
+
+        .faq-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out, padding 0.3s ease;
+        }
+        .faq-item.active .faq-content {
+            max-height: 500px;
+            padding: 1rem;
+            border-top-width: 1px;
+        }
+        .faq-item.active .chevron {
+            transform: rotate(180deg);
+        }
+        
+        #mobile-menu {
+            transition: transform 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gray-50 flex flex-col pb-20 md:pb-0">
+
+    <!-- Navigation Header -->
+    <header id="main-header" class="fixed top-0 w-full z-50 transition-all duration-300 bg-transparent py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="bg-plumbing-red p-2 rounded-sm shadow-lg">
+                    <span class="text-white font-black text-2xl tracking-tighter leading-none italic">JJJ</span>
+                </div>
+                <div class="flex flex-col">
+                    <span class="logo-text font-bold uppercase tracking-tight leading-none text-white drop-shadow-md">Triple J Plumbing</span>
+                    <span class="logo-subtext text-[10px] uppercase tracking-widest font-semibold text-white drop-shadow-md">Services LLC</span>
+                </div>
+            </div>
+            
+            <div class="hidden md:flex items-center gap-6">
+                <a href="#services" class="nav-link font-medium uppercase text-sm tracking-wide text-white hover:text-gray-200">Services</a>
+                <a href="#why-choose" class="nav-link font-medium uppercase text-sm tracking-wide text-white hover:text-gray-200">Why Us</a>
+                <a href="#faqs" class="nav-link font-medium uppercase text-sm tracking-wide text-white hover:text-gray-200">FAQs</a>
+                <a href="tel:7138937051" class="bg-plumbing-red hover:bg-red-700 text-white px-5 py-2 rounded-sm font-bold flex items-center gap-2 transition-colors duration-200 shadow-md">
+                    <i data-lucide="phone" class="w-4 h-4 fill-current"></i>
+                    (713) 893-7051
+                </a>
+            </div>
+            
+            <button id="menu-toggle" class="md:hidden p-2 text-white bg-plumbing-blue rounded">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Side Menu Overlay -->
+    <div id="mobile-menu" class="fixed inset-y-0 right-0 w-64 bg-white z-[60] shadow-2xl translate-x-full md:hidden">
+        <div class="p-6">
+            <div class="flex justify-between items-center mb-8">
+                <span class="font-bold text-plumbing-blue">Menu</span>
+                <button id="menu-close" class="p-2 text-gray-500">
+                    <i data-lucide="x" class="w-6 h-6"></i>
+                </button>
+            </div>
+            <nav class="flex flex-col gap-6">
+                <a href="#services" class="text-lg font-semibold text-gray-800 uppercase mobile-link">Services</a>
+                <a href="#why-choose" class="text-lg font-semibold text-gray-800 uppercase mobile-link">Why Us</a>
+                <a href="#faqs" class="text-lg font-semibold text-gray-800 uppercase mobile-link">FAQs</a>
+                <a href="tel:7138937051" class="bg-plumbing-red text-white py-4 px-6 rounded font-bold text-center flex items-center justify-center gap-2">
+                    <i data-lucide="phone" class="w-5 h-5"></i>
+                    Call Now
+                </a>
+            </nav>
+        </div>
+    </div>
+    <div id="menu-backdrop" class="fixed inset-0 bg-black/50 z-[55] hidden md:hidden"></div>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen min-h-[600px] flex items-center justify-center pt-20">
+        <div class="absolute inset-0 z-0 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1581244277943-fe4a9c777189?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" class="w-full h-full object-cover" alt="Professional Plumbing Service" />
+            <div class="absolute inset-0 bg-gradient-to-r from-blue-900/90 via-blue-900/70 to-transparent"></div>
+        </div>
+        
+        <div class="container mx-auto px-4 z-10 text-white relative">
+            <div class="max-w-2xl">
+                <div class="inline-flex items-center gap-2 bg-plumbing-red px-3 py-1 text-xs font-bold uppercase tracking-widest mb-4 animate-pulse">
+                    <span class="flex h-2 w-2 rounded-full bg-white opacity-75"></span>
+                    Emergency Services 24/7
+                </div>
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 leading-tight">
+                    Fast, Reliable Plumbing in <span class="text-yellow-400">Pasadena, TX</span>
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 text-gray-200 max-w-xl">
+                    When plumbing problems can't wait, call the local experts you can trust. Open 24 hours for emergency repairs.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="tel:7138937051" class="bg-plumbing-red hover:bg-red-700 text-white text-center py-4 px-8 rounded-sm font-bold text-xl flex items-center justify-center gap-3 transition-all duration-300 transform hover:scale-105 shadow-xl">
+                        <i data-lucide="phone" class="w-6 h-6"></i>
+                        Call Now: (713) 893-7051
+                    </a>
+                    <button class="bg-white/10 backdrop-blur-md hover:bg-white/20 border-2 border-white/30 text-white text-center py-4 px-8 rounded-sm font-bold text-lg transition-all duration-300">
+                        Request Service
+                    </button>
+                </div>
+                <div class="mt-8 flex items-center gap-6">
+                    <div class="flex items-center gap-1">
+                        <i data-lucide="star" class="w-5 h-5 fill-yellow-400 text-yellow-400"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-yellow-400 text-yellow-400"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-yellow-400 text-yellow-400"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-yellow-400 text-yellow-400"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-yellow-400 text-yellow-400"></i>
+                        <span class="ml-2 font-bold">5.0 Rating</span>
+                    </div>
+                    <div class="h-6 w-px bg-white/30"></div>
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-green-400"></i>
+                        <span>Free Estimates</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Strip -->
+    <div class="bg-white border-b border-gray-100 shadow-sm relative z-20">
+        <div class="container mx-auto px-4 py-8">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="flex items-center gap-3 justify-center md:justify-start">
+                    <div class="p-2 bg-gray-50 rounded-full text-yellow-400"><i data-lucide="star" class="w-5 h-5"></i></div>
+                    <span class="text-sm md:text-base font-bold text-gray-700 uppercase tracking-tight">5.0-Star Rated Local</span>
+                </div>
+                <div class="flex items-center gap-3 justify-center md:justify-start">
+                    <div class="p-2 bg-gray-50 rounded-full text-blue-500"><i data-lucide="clock" class="w-5 h-5"></i></div>
+                    <span class="text-sm md:text-base font-bold text-gray-700 uppercase tracking-tight">Open 24 Hours</span>
+                </div>
+                <div class="flex items-center gap-3 justify-center md:justify-start">
+                    <div class="p-2 bg-gray-50 rounded-full text-red-500"><i data-lucide="map-pin" class="w-5 h-5"></i></div>
+                    <span class="text-sm md:text-base font-bold text-gray-700 uppercase tracking-tight">Serving Pasadena, TX</span>
+                </div>
+                <div class="flex items-center gap-3 justify-center md:justify-start">
+                    <div class="p-2 bg-gray-50 rounded-full text-green-500"><i data-lucide="shield-check" class="w-5 h-5"></i></div>
+                    <span class="text-sm md:text-base font-bold text-gray-700 uppercase tracking-tight">Licensed & Insured</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Core Services -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 max-w-2xl mx-auto">
+                <h2 class="text-4xl font-bold text-plumbing-blue mb-4">Our Professional Plumbing Services</h2>
+                <div class="h-1.5 w-24 bg-plumbing-red mx-auto mb-6"></div>
+                <p class="text-gray-600 text-lg">Comprehensive plumbing solutions for Pasadena homeowners.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
+                <div class="bg-white p-8 rounded-lg shadow-md border-t-4 border-transparent hover:border-plumbing-red transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mb-6 group-hover:bg-plumbing-blue transition-colors duration-300">
+                        <i data-lucide="clock" class="w-8 h-8 text-plumbing-blue group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-gray-800">Emergency Repairs</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">24/7 rapid response for burst pipes, major leaks, and urgent failures.</p>
+                    <a href="tel:7138937051" class="text-plumbing-blue font-bold flex items-center gap-2 hover:gap-3 transition-all">Book Now <i data-lucide="check-circle" class="w-4 h-4"></i></a>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md border-t-4 border-transparent hover:border-plumbing-red transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mb-6 group-hover:bg-plumbing-blue transition-colors duration-300">
+                        <i data-lucide="trash-2" class="w-8 h-8 text-plumbing-blue group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-gray-800">Drain Cleaning</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">Professional clog removal and line jetting to restore flow.</p>
+                    <a href="tel:7138937051" class="text-plumbing-blue font-bold flex items-center gap-2 hover:gap-3 transition-all">Book Now <i data-lucide="check-circle" class="w-4 h-4"></i></a>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md border-t-4 border-transparent hover:border-plumbing-red transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mb-6 group-hover:bg-plumbing-blue transition-colors duration-300">
+                        <i data-lucide="search" class="w-8 h-8 text-plumbing-blue group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-gray-800">Leak Detection</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">Advanced diagnostic tools to find hidden leaks anywhere.</p>
+                    <a href="tel:7138937051" class="text-plumbing-blue font-bold flex items-center gap-2 hover:gap-3 transition-all">Book Now <i data-lucide="check-circle" class="w-4 h-4"></i></a>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md border-t-4 border-transparent hover:border-plumbing-red transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mb-6 group-hover:bg-plumbing-blue transition-colors duration-300">
+                        <i data-lucide="thermometer" class="w-8 h-8 text-plumbing-blue group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-gray-800">Water Heaters</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">Expert installation and repair for tank and tankless systems.</p>
+                    <a href="tel:7138937051" class="text-plumbing-blue font-bold flex items-center gap-2 hover:gap-3 transition-all">Book Now <i data-lucide="check-circle" class="w-4 h-4"></i></a>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md border-t-4 border-transparent hover:border-plumbing-red transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mb-6 group-hover:bg-plumbing-blue transition-colors duration-300">
+                        <i data-lucide="hammer" class="w-8 h-8 text-plumbing-blue group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-gray-800">Fixture Repair</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">Leaky faucets, running toilets, and hardware upgrades.</p>
+                    <a href="tel:7138937051" class="text-plumbing-blue font-bold flex items-center gap-2 hover:gap-3 transition-all">Book Now <i data-lucide="check-circle" class="w-4 h-4"></i></a>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md border-t-4 border-transparent hover:border-plumbing-red transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mb-6 group-hover:bg-plumbing-blue transition-colors duration-300">
+                        <i data-lucide="wrench" class="w-8 h-8 text-plumbing-blue group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-gray-800">Sewer Line Services</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">Main line inspections, repairs, and clean-outs.</p>
+                    <a href="tel:7138937051" class="text-plumbing-blue font-bold flex items-center gap-2 hover:gap-3 transition-all">Book Now <i data-lucide="check-circle" class="w-4 h-4"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Section -->
+    <section id="why-choose" class="py-20 bg-plumbing-blue text-white relative">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row gap-16 items-center">
+                <div class="lg:w-1/2">
+                    <h2 class="text-4xl font-bold mb-8">Why Residents Choose Triple J</h2>
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-plumbing-red flex items-center justify-center font-bold">1</div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-1">Local Pasadena Roots</h4>
+                                <p class="text-blue-100 italic">2711 Lilac St, Pasadena, TX 77503</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-plumbing-red flex items-center justify-center font-bold">2</div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-1">Fast 24/7 Response</h4>
+                                <p class="text-blue-100">Emergencies don't wait, neither do we.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-plumbing-red flex items-center justify-center font-bold">3</div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-1">Honest Pricing</h4>
+                                <p class="text-blue-100">Transparent quotes, no hidden fees.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 relative">
+                    <img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" class="rounded shadow-2xl" alt="Plumber working" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faqs" class="py-20 bg-white">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="text-4xl font-bold text-center mb-12 text-plumbing-blue">Common Questions</h2>
+            <div class="space-y-4">
+                <div class="faq-item border border-gray-200 rounded-lg active">
+                    <button class="faq-toggle w-full flex items-center justify-between p-4 text-left font-semibold text-gray-800">
+                        <span>Do you offer 24/7 services?</span>
+                        <i data-lucide="chevron-down" class="chevron w-5 h-5 transition-transform"></i>
+                    </button>
+                    <div class="faq-content px-4 text-gray-600">Yes, we are available 24 hours a day for any emergency.</div>
+                </div>
+                <div class="faq-item border border-gray-200 rounded-lg">
+                    <button class="faq-toggle w-full flex items-center justify-between p-4 text-left font-semibold text-gray-800">
+                        <span>Are you licensed and insured?</span>
+                        <i data-lucide="chevron-down" class="chevron w-5 h-5 transition-transform"></i>
+                    </button>
+                    <div class="faq-content px-4 text-gray-600">Absolutely, we are fully licensed and insured in the state of Texas.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-white font-bold mb-2">Triple J Plumbing Services LLC</p>
+            <p class="mb-6">2711 Lilac St, Pasadena, TX 77503</p>
+            <a href="tel:7138937051" class="text-plumbing-red font-bold text-xl">(713) 893-7051</a>
+        </div>
+    </footer>
+
+    <!-- Sticky Mobile Call Bar -->
+    <div class="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 p-3 z-50 shadow-xl">
+        <a href="tel:7138937051" class="w-full bg-plumbing-red text-white py-4 rounded-lg font-black text-xl flex items-center justify-center gap-3">
+            <i data-lucide="phone" class="w-6 h-6 fill-current"></i>
+            CALL (713) 893-7051
+        </a>
+    </div>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Simple Sticky Header logic
+        const header = document.getElementById('main-header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) header.classList.add('header-scrolled');
+            else header.classList.remove('header-scrolled');
+        });
+
+        // FAQ logic
+        document.querySelectorAll('.faq-toggle').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const item = btn.parentElement;
+                const wasActive = item.classList.contains('active');
+                document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+                if (!wasActive) item.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>

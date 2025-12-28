@@ -1,0 +1,1 @@
+// Data moved to static index.html

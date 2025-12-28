@@ -1,0 +1,1 @@
+// Static build - TypeScript types no longer needed.
